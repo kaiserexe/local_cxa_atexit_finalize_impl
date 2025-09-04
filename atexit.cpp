@@ -80,27 +80,28 @@ namespace {
     extern "C" [[gnu::used]] void __cxa_finalize(void * /* dso */) { // NOLINT(bugprone-reserved-identifier)
         atexit_lock();
         restart:
+        if (count > 0) {
+            size_t total = count;
+            for (size_t i = count - 1;; --i) {
+                if (g_array[i].fn == nullptr) continue;
 
-        size_t total = count;
-        for (size_t i = count - 1;; --i) {
-            if (g_array[i].fn == nullptr) continue;
+                // Clear the entry in the array to avoid calling an entry again
+                // if __cxa_finalize is called recursively.
+                const AtexitEntry entry = g_array[i];
+                g_array[i] = {};
 
-            // Clear the entry in the array to avoid calling an entry again
-            // if __cxa_finalize is called recursively.
-            const AtexitEntry entry = g_array[i];
-            g_array[i] = {};
+                atexit_unlock();
+                entry.fn(entry.arg);
+                atexit_lock();
 
-            atexit_unlock();
-            entry.fn(entry.arg);
-            atexit_lock();
-
-            if (count != total) {
-                goto restart;
+                if (count != total) {
+                    goto restart;
+                }
+                if (i == 0) break;
             }
-            if (i == 0) break;
-        }
 
-        free(g_array);
+            free(g_array);
+        }
         atexit_unlock();
     }
 }
